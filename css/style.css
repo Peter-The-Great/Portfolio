@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+.bg-primary {
+    background-color: #1bbc9c !important;
+}
+.round_profile{
+	border-radius: 150px;
+}
+::-webkit-scrollbar {
+    width: 15px;
+    /* display: none; */
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background: #1abc9c;
+}
+::-webkit-scrollbar-thumb {
+    background: #1cc74f; 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #1cc77d; 
+}
+
+.grow {
+    transition: all .2s ease-in-out;
+}
+.grow:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
