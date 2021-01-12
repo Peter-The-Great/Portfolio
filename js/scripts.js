@@ -9,10 +9,12 @@
         if (target.length) {
           $('html, body').animate({
             scrollTop: (target.offset().top - 71)
-          }, 800, "easeInOutExpo");
+          }, 1000, "easeInOutExpo");
+          return false;
         }
       }
     });
+  
     // Scroll to top button appear
     $(document).scroll(function() {
       var scrollDistance = $(this).scrollTop();
@@ -33,8 +35,9 @@
       target: '#mainNav',
       offset: 80
     });
+  
     // Collapse Navbar
-    let navbarCollapse = function() {
+    var navbarCollapse = function() {
       if ($("#mainNav").offset().top > 100) {
         $("#mainNav").addClass("navbar-shrink");
       } else {
@@ -42,7 +45,7 @@
       }
     };
     // Collapse now if page is not at top
-    //navbarCollapse();
+    navbarCollapse();
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
   
