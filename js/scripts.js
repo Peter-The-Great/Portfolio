@@ -59,6 +59,11 @@
         $(this).removeClass("floating-label-form-group-with-focus");
       });
     });
+
+    //fancybox settings
+    $('[data-fancybox="gallery"]').fancybox({
+        transitionEffect: "circular",
+     });
   
   })(jQuery);
 
